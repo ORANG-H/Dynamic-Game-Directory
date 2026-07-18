@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Search Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./src/main.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="bg-gray-800 border-b border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold">Game Search Engine</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-6">
+        <div class="mb-4">
+            <input id="game-search" type="text" placeholder="Search for a game..." class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring focus:ring-blue-500">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 invisible" id="game-results">
+            <div class="bg-gray-800 p-4 rounded shadow">
+                <h2 class="text-xl font-bold mb-2">Game Title</h2>
+                <p class="mb-2">Platforms: </p>
+                <img id="game-image" src="" alt="" class="w-full h-auto mb-2 rounded">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
